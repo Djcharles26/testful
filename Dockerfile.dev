@@ -1,0 +1,11 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY ./package.json ./
+RUN npm install
+
+# we can delete COPY cause we are making reference to other folder, but this just work in development
+COPY ./ ./
+
+CMD ["npm", "start"]

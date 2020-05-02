@@ -19,6 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <p>
+        General Kenobi
+      </p>
     </div>
   );
 }
